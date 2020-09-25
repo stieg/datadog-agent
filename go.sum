@@ -90,6 +90,7 @@ github.com/DataDog/cast v1.3.1-0.20190301154711-1ee8c8bd14a3/go.mod h1:Qx5cxh0v+
 github.com/DataDog/datadog-go v3.2.0+incompatible/go.mod h1:LButxg5PwREeZtORoXG3tL4fMGNddJ+vMq1mwgfaqoQ=
 github.com/DataDog/datadog-go v3.5.0+incompatible h1:AShr9cqkF+taHjyQgcBcQUt/ZNK+iPq4ROaZwSX5c/U=
 github.com/DataDog/datadog-go v3.5.0+incompatible/go.mod h1:LButxg5PwREeZtORoXG3tL4fMGNddJ+vMq1mwgfaqoQ=
+github.com/DataDog/datadog-operator v0.2.1-0.20200527110245-7850164045c8 h1:InMrNzx7uo3/6XLK5HARm7yMc3+hzAaRQ37+fxHZiEs=
 github.com/DataDog/datadog-operator v0.2.1-0.20200527110245-7850164045c8/go.mod h1:+rVKF4Ma28OAGnMwtV8gdX8mtq1eYovX7yLNJHzHCHs=
 github.com/DataDog/datadog-operator v0.2.1-0.20200709152311-9c71245c6822 h1:E5WNl43j4mpE3V35QySkRnP/m9pjXOnEZD6eyTK7Qvk=
 github.com/DataDog/datadog-operator v0.2.1-0.20200709152311-9c71245c6822/go.mod h1:a5NqgPglcSct+NwO9gPvVhoL5V6G1+gHbRaRnU8U54M=
@@ -109,6 +110,18 @@ github.com/DataDog/ebpf v0.0.0-20200914122217-4ae764452e0c h1:yuhgwYipZGft4iiZjp
 github.com/DataDog/ebpf v0.0.0-20200914122217-4ae764452e0c/go.mod h1:G6NxI0QPFzGNL00kbkDgHcduq6kUkZZI22gAQieM3Dc=
 github.com/DataDog/ebpf v0.0.0-20200915074912-2edb2efe69b7 h1:BuWUbXf6BbBWXfyDG4lQftwOijco3IuOi6Mial0CItE=
 github.com/DataDog/ebpf v0.0.0-20200915074912-2edb2efe69b7/go.mod h1:G6NxI0QPFzGNL00kbkDgHcduq6kUkZZI22gAQieM3Dc=
+github.com/DataDog/ebpf v0.0.0-20200915154553-c385098a70e8 h1:Eyrnu6RHYz4FXNIlkCRqQNYyBpSXbnskVw/nGcDJZuM=
+github.com/DataDog/ebpf v0.0.0-20200915154553-c385098a70e8/go.mod h1:G6NxI0QPFzGNL00kbkDgHcduq6kUkZZI22gAQieM3Dc=
+github.com/DataDog/ebpf v0.0.0-20200916113425-e968fa5d0fc2 h1:z16HqkneZpLrirQpMUQUHF6lU4wAKMnBP2NOf+TyV4o=
+github.com/DataDog/ebpf v0.0.0-20200916113425-e968fa5d0fc2/go.mod h1:G6NxI0QPFzGNL00kbkDgHcduq6kUkZZI22gAQieM3Dc=
+github.com/DataDog/ebpf v0.0.0-20200921102811-24a34587e1bf h1:t4qf25MWs8HWm7Ik3N3uv05bor65Zn26sf3FkgAXchw=
+github.com/DataDog/ebpf v0.0.0-20200921102811-24a34587e1bf/go.mod h1:G6NxI0QPFzGNL00kbkDgHcduq6kUkZZI22gAQieM3Dc=
+github.com/DataDog/ebpf v0.0.0-20200921122436-85f9609d3617 h1:AHaaImrJA4vPjDORcSSXFR3KjU+8oMnfs3oeHAD3sJ0=
+github.com/DataDog/ebpf v0.0.0-20200921122436-85f9609d3617/go.mod h1:G6NxI0QPFzGNL00kbkDgHcduq6kUkZZI22gAQieM3Dc=
+github.com/DataDog/ebpf v0.0.0-20200922093655-3f396fbc8f59 h1:LnI1BL+rKVlRWym0U+lnbh7Y1zmLN3lq9FhgQ9MOzO0=
+github.com/DataDog/ebpf v0.0.0-20200922093655-3f396fbc8f59/go.mod h1:G6NxI0QPFzGNL00kbkDgHcduq6kUkZZI22gAQieM3Dc=
+github.com/DataDog/ebpf v0.0.0-20200922094607-5f77cfbafd89 h1:7g7kfRlsr+y05t+AFgqlKxxJhjtiNemshlKlCSZa2Nc=
+github.com/DataDog/ebpf v0.0.0-20200922094607-5f77cfbafd89/go.mod h1:G6NxI0QPFzGNL00kbkDgHcduq6kUkZZI22gAQieM3Dc=
 github.com/DataDog/gobpf v0.0.0-20200907093925-5f8313cb4d71 h1:0TOAH3X9tEvMBVQ1HYrQfrnAUcSS1mfMrhqeN+spV1s=
 github.com/DataDog/gobpf v0.0.0-20200907093925-5f8313cb4d71/go.mod h1:rNvi5cSHdpxN6495MOYAWN3yukac8lORoluL+9Osrsw=
 github.com/DataDog/gohai v0.0.0-20200605003749-e17d616e422a h1:BkU6uq4Ib7Kp1zP7MT33IdHZQazC+kxbuTyEmgePyyA=
@@ -336,6 +349,7 @@ github.com/cznic/strutil v0.0.0-20171016134553-529a34b1c186/go.mod h1:AHHPPPXTw0
 github.com/cznic/zappy v0.0.0-20160723133515-2533cb5b45cc/go.mod h1:Y1SNZ4dRUOKXshKUbwUapqNncRrho4mkjQebgEHZLj8=
 github.com/d2g/dhcp4 v0.0.0-20170904100407-a1d1b6c41b1c/go.mod h1:Ct2BUK8SB0YC1SMSibvLzxjeJLnrYEVLULFNiHY9YfQ=
 github.com/d2g/dhcp4client v0.0.0-20170829104524-6e570ed0a266/go.mod h1:j0hNfjhrt2SxUOw55nL0ATM/z4Yt3t2Kd1mW34z5W5s=
+github.com/datadog/extendeddaemonset v0.1.1-0.20200514082145-c99b8a156378 h1:PbkvpnZU/FEq6ESqEetjuQzsb4+swqPG9UYFzqBrnBQ=
 github.com/datadog/extendeddaemonset v0.1.1-0.20200514082145-c99b8a156378/go.mod h1:9YSrkg/JGqlxjoLglDXi19N7GWv7bjGOhd2bg6fQ8Pg=
 github.com/datadog/extendeddaemonset v0.1.1-0.20200618074032-94ec1f3a5192 h1:LV8XmqPReeTODGyphvQKAmzCYy72RdfqzHk+olFcj5E=
 github.com/datadog/extendeddaemonset v0.1.1-0.20200618074032-94ec1f3a5192/go.mod h1:9YSrkg/JGqlxjoLglDXi19N7GWv7bjGOhd2bg6fQ8Pg=
