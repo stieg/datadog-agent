@@ -28,6 +28,9 @@
 #include "raw_syscalls.h"
 #include "getattr.h"
 #include "setxattr.h"
+#include "ptrace.h"
+#include "mmap.h"
+#include "mprotect.h"
 
 __u32 _version SEC("version") = 0xFFFFFFFE;
 
