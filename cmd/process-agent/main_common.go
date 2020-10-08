@@ -13,6 +13,7 @@ import (
 	"github.com/DataDog/datadog-agent/pkg/pidfile"
 	"github.com/DataDog/datadog-agent/pkg/process/checks"
 	"github.com/DataDog/datadog-agent/pkg/process/config"
+	"github.com/DataDog/datadog-agent/pkg/process/heartbeat"
 	"github.com/DataDog/datadog-agent/pkg/process/statsd"
 	"github.com/DataDog/datadog-agent/pkg/process/util"
 	"github.com/DataDog/datadog-agent/pkg/tagger"
@@ -183,6 +184,20 @@ func runAgent(exit chan struct{}) {
 		os.Exit(1)
 		return
 	}
+
+	sysprobeMonitor, err := heartbeat.NewModuleMonitor(heartbeat.Options{
+		KeysPerDomain: keysPerDomains(cfg.APIEndpoints),
+		TagVersion:    Version,
+		TagRevision:   GitCommit,
+	})
+	defer sysprobeMonitor.Stop()
+
+	if err != nil {
+		log.Warnf("failed to initialize system-probe monitor: %s", err)
+	} else {
+		sysprobeMonitor.Every(15 * time.Second)
+	}
+
 	for range exit {
 
 	}
