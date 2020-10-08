@@ -13,6 +13,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/DataDog/datadog-agent/cmd/agent/common"
+	secagentcommon "github.com/DataDog/datadog-agent/cmd/security-agent/common"
 	"github.com/DataDog/datadog-agent/pkg/collector/runner"
 	"github.com/DataDog/datadog-agent/pkg/collector/scheduler"
 	"github.com/DataDog/datadog-agent/pkg/compliance/agent"
@@ -174,5 +175,9 @@ func startCompliance(hostname string, endpoints *config.Endpoints, context *clie
 	stopper.Add(agent)
 
 	log.Infof("Running compliance checks every %s", checkInterval.String())
+
+	// Send the compliance 'running' metrics periodically
+	go secagentcommon.SendRunningMetrics("compliance")
+
 	return nil
 }

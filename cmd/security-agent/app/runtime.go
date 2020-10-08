@@ -14,6 +14,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
+	secagentcommon "github.com/DataDog/datadog-agent/cmd/security-agent/common"
 	"github.com/DataDog/datadog-agent/pkg/compliance/event"
 	coreconfig "github.com/DataDog/datadog-agent/pkg/config"
 	"github.com/DataDog/datadog-agent/pkg/logs/auditor"
@@ -128,6 +129,9 @@ func startRuntimeSecurity(hostname string, endpoints *config.Endpoints, context 
 	stopper.Add(agent)
 
 	log.Info("Datadog runtime security agent is now running")
+
+	// Send the runtime 'running' metrics periodically
+	go secagentcommon.SendRunningMetrics("runtime")
 
 	return agent, nil
 }
